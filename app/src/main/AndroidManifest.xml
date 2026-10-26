@@ -12,13 +12,13 @@
             <category android:name="android.intent.category.LAUNCHER"/>
         </intent>
     </queries>
-    <application
+    <application android:allowBackup="false"
         android:label="TV Launcher"
         android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:launchMode="singleTask"
+            android:launchMode="singleTask" android:screenOrientation="landscape" android:stateNotNeeded="true"
             android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
